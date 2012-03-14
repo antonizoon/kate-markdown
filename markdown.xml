@@ -60,6 +60,10 @@
 				<RegExpr context="numlist" String="^[\d]+\.\s" />
 				<RegExpr attribute="meta" String="^(Title|Author|Date|Copyright|Revision|CSS|LaTeX\ XSLT|Categories|Tags|BaseName|Excerpt):(.*)+$" />
 				<IncludeRules context="inc" />
+
+				<!-- GitHub highlighted code -->
+				<RegExpr attribute="code" context="highlightcpp" String="^```c\+\+$" beginRegion="code" />
+				<RegExpr attribute="code" context="highlightnone" String="^```[^\s]*" beginRegion="code" />
 			</context>
 
 			<context attribute="blockquote" lineEndContext="#pop" name="blockquote">
@@ -97,6 +101,21 @@
 				<RegExpr attribute="mailtolink" String="&mailtolinkregex;"/>
 				<RegExpr attribute="strikeout" minimal="true" String="&strikeoutregex;"/>
 				<RegExpr attribute="linebreak" minimal="true" String="&linebreakregex;"/>
+			</context>
+
+			<!-- GitHub highlighted code -->
+
+			<context attribute="Normal Text" name="highlightnone" lineEndContext="#stay" >
+				<IncludeRules context="inccode" />
+			</context>
+
+			<context attribute="Normal Text" name="highlightcpp" lineEndContext="#stay" >
+				<IncludeRules context="##C++" />
+				<IncludeRules context="inccode" />
+			</context>
+
+			<context attribute="common" name="inccode" lineEndContext="#stay" >
+				<RegExpr attribute="code" context="#pop" String="^```$" endRegion="code" />
 			</context>
 		</contexts>
 
