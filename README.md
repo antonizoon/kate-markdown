@@ -21,6 +21,10 @@ Additional contributors whose modifications have been pulled to this repository 
 * KDE Desktop Environment
 * Kate (Of course)
 
+## Installing from Arch Linux or a derivative
+
+If you use Arch, you can easily install these syntax rules using the [AUR](https://aur.archlinux.org/packages.php?ID=62856) or [CCR](http://chakra-linux.org/ccr/packages.php?ID=4368) package `kate-syntax-markdown-git`. You can also use the included `PKGBUILD` or precompiled `tar.xz` in this git repository .
+
 ## Installing to Home Directory
 
     mkdir -p ~/.kde/share/apps/katepart/syntax/
@@ -34,5 +38,4 @@ Run all commands as root.
 
     curl -L https://raw.github.com/treeofsephiroth/kate-markdown/master/markdown.xml -o /usr/share/apps/katepart/syntax/markdown.xml
     
-
 Then save your already opened markdown files and restart Kate.
