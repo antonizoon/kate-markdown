@@ -1,17 +1,9 @@
-# This is an example PKGBUILD file. Use this as a start to creating your own,
-# and remove these comments. For more information, see 'man PKGBUILD'.
-# NOTE: Please fill out the license field for your package! If it is unknown,
-# then please put 'unknown'.
-
-# See http://wiki.archlinux.org/index.php/VCS_PKGBUILD_Guidelines
-# for more information on packaging from GIT sources.
-
-# Maintainer: Your Name <youremail@domain.com>
+# Maintainer: iruel (Tenshi Hinanawi) <cockmomgler@gmail.com>
 pkgname=kate-syntax-markdown-git
-pkgver=VERSION
+pkgver=20120916
 pkgrel=1
 pkgdesc="Markdown syntax highlighting for the KDE Kate Advanced Editor."
-arch=()
+arch=('any')
 url="https://github.com/treeofsephiroth/kate-markdown"
 license=('GPL')
 groups=()
@@ -45,6 +37,7 @@ build() {
 
 package() {
   cd "$srcdir/$_gitname-build"
+  mkdir -p $pkgdir/usr/share/apps/katepart/syntax/
   cp markdown.xml $pkgdir/usr/share/apps/katepart/syntax/markdown.xml
 }
 

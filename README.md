@@ -2,6 +2,8 @@
 
 Fork of markdown syntax rules for Kate (KDE Editor) originally created by [Darrin Yeager,](http://www.dyeager.org/blog/2008/06/kate-markdown-color-syntax-highlighting.html) with improvements and updates from [claes](https://github.com/claes/kate-markdown).
 
+These syntax rules are dual-licensed under the GPL and BSD licenses.
+
 I have also added my own modifications:
 
 * This README file
