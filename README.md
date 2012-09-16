@@ -14,13 +14,23 @@ Additional contributors whose modifications have been pulled to this repository 
 * [Sebastien Doeraene (sjrd)](https://github.com/sjrd/kate-markdown) _ Normalized whitespace.
 * [Paul Weager (metaxy)](https://github.com/metaxy/kate-markdown) - Added *.markdown to supported extensions.
 
+## Dependencies
+
+* KDE Desktop Environment
+* Kate (Of course)
+
 ## Installing to Home Directory
 
     mkdir -p ~/.kde/share/apps/katepart/syntax/
-    curl -L https://raw.github.com/ouvrages/kate-markdown/master/markdown.xml -o ~/.kde/share/apps/katepart/syntax/markdown.xml
+    curl -L https://raw.github.com/treeofsephiroth/kate-markdown/master/markdown.xml -o ~/.kde/share/apps/katepart/syntax/markdown.xml
 
-Then restart Kate and save your already opened markdown files.
+Then save your already opened markdown files and restart Kate.
 
 ## Installing to System Directory
 
-(research needed)
+Run all commands as root.
+
+    curl -L https://raw.github.com/treeofsephiroth/kate-markdown/master/markdown.xml -o /usr/share/apps/katepart/syntax/markdown.xml
+    
+
+Then save your already opened markdown files and restart Kate.
