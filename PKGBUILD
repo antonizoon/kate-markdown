@@ -2,12 +2,12 @@
 pkgname=kate-syntax-markdown-git
 pkgver=20120916
 pkgrel=1
-pkgdesc="Markdown syntax highlighting for the KDE Kate Advanced Editor."
+pkgdesc="Markdown syntax highlighting for the KDE Katepart."
 arch=('any')
 url="https://github.com/treeofsephiroth/kate-markdown"
 license=('GPL' 'BSD')
 groups=()
-depends=('kdesdk-kate')
+depends=()
 makedepends=('git')
 noextract=()
 #md5sums=() #generate with 'makepkg -g'

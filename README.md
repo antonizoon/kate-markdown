@@ -1,6 +1,6 @@
 # Markdown Syntax Highlighting for the Kate Editor
 
-Fork of markdown syntax rules for Kate (KDE Editor) originally created by [Darrin Yeager,](http://www.dyeager.org/blog/2008/06/kate-markdown-color-syntax-highlighting.html) with improvements and updates from [claes](https://github.com/claes/kate-markdown).
+Fork of markdown syntax rules for Kate (KDE Editor) and katepart backend  originally created by [Darrin Yeager,](http://www.dyeager.org/blog/2008/06/kate-markdown-color-syntax-highlighting.html) with improvements and updates from [claes](https://github.com/claes/kate-markdown).
 
 These syntax rules are dual-licensed under the GPL and BSD licenses.
 
@@ -18,8 +18,7 @@ Additional contributors whose modifications have been pulled to this repository 
 
 ## Dependencies
 
-* KDE Desktop Environment
-* Kate (Of course)
+* KDE Desktop Environment (all KDE apps use katepart)
 
 ## Installing from Arch Linux or a derivative
 
