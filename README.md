@@ -29,7 +29,7 @@ If you use Arch, you can easily install these syntax rules using the [AUR](https
 ## Installing to Home Directory
 
     mkdir -p ~/.kde/share/apps/katepart/syntax/
-    curl -L https://raw.github.com/treeofsephiroth/kate-markdown/master/markdown.xml -o ~/.kde/share/apps/katepart/syntax/markdown.xml
+    curl -L https://raw.github.com/antonizoon/kate-markdown/master/markdown.xml -o ~/.kde/share/apps/katepart/syntax/markdown.xml
 
 Then save your already opened markdown files and restart Kate.
 
@@ -37,6 +37,6 @@ Then save your already opened markdown files and restart Kate.
 
 Run all commands as root.
 
-    curl -L https://raw.github.com/treeofsephiroth/kate-markdown/master/markdown.xml -o /usr/share/apps/katepart/syntax/markdown.xml
+    curl -L https://raw.github.com/antonizoon/kate-markdown/master/markdown.xml -o /usr/share/apps/katepart/syntax/markdown.xml
     
 Then save your already opened markdown files and restart Kate.
