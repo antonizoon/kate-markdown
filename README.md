@@ -1,5 +1,7 @@
 # Markdown Syntax Highlighting for the Kate Editor
 
+> **Note:** Kate now has it's own Markdown syntax rules, so there is no longer a need to install these.
+
 Fork of markdown syntax rules for Kate (KDE Editor) and katepart backend  originally created by [Darrin Yeager,](http://www.dyeager.org/blog/2008/06/kate-markdown-color-syntax-highlighting.html) with improvements and updates from [claes](https://github.com/claes/kate-markdown).
 
 These syntax rules are dual-licensed under the GPL and BSD licenses.
